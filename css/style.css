@@ -1,0 +1,288 @@
+
+            /* 2 導覽列 */
+            .row{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            body {
+                background: #F0EDDA url('/images/bg-main.png');
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            nav {
+                height: 80px;
+
+            }
+
+            .navbar {
+                margin-top: -2px;
+                width: 100%;
+                z-index: 100;
+            }
+            
+            li a {
+                color: black !important;
+                margin-left: 40px;
+                font-size: 30px;
+            }
+            
+            li a:hover {
+                background-color: rgb(209, 209, 209);
+
+            }
+            
+            .navbar-toggler {
+                background-color: lightgray;
+            }
+            
+            .nav-link {
+                padding: 20px;
+                
+            }
+            .navbar-brand{
+                margin-left: 20px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                
+            }
+            .container-fluid {
+                background-color:#FAF8F4;
+                border-bottom: 1px solid black;
+            }
+
+           
+            h1,h2,h3,h4,h5,p,a{
+                font-family: DFKai-sb;
+                color: black;
+            }
+            
+            
+            
+            
+            /* １三欄位 */
+
+            .big-logo{
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            
+            
+            /* ３　介紹卡 */
+            
+            .profile-img {
+                width: 200px;
+                /* 置中 */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .card {
+                background-color: #fcfcdd;
+                height: 700px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            .card-body{
+                font-size: 20px;
+                text-align: center;
+            }
+            .card-text{
+                text-align: left;
+            }
+            .card-title{
+                text-align: center;
+                font-size: 40px;
+            }
+            .banner-image {
+                margin-top: 50px;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-top-left-radius: 20%;
+                border-top-right-radius: 20%;
+            }
+            .btn{
+                border: none;
+                background-color:#F0F0F0;
+                color: black;
+            }
+            .card .btn {
+                background-color: #fcfcdd;
+                font-size: 30px;
+                border: 1px solid black;
+                color: black;
+                box-shadow: 5px 5px;
+                /* padding: 20px; */
+                /* 移到下方 */
+                position: absolute;
+                left: 160px;
+                bottom: 150px;
+
+            }
+            .card .btn:hover {
+                background-color: #E8E8D0;
+            }
+
+            .btn:hover{
+                color: black;
+                background-color: rgb(209, 209, 209);
+            }
+            #ai{
+                text-align: center;
+            }
+
+            
+            /* ４　幻燈片 */
+            
+            #slideshow{
+                margin-top: 80px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                margin-bottom: 50px;
+            }
+
+
+            .slide-pic {
+                width: 100%;
+                height: 600px;
+            }
+            
+            .carousel-item h2 {
+                color: white;
+                background: rgb(16, 43, 28);
+                background: linear-gradient(90deg, rgba(16, 43, 28, 0) 25%, rgba(50, 53, 52, 0.798739564185049) 33%, rgba(53, 54, 53, 0.809943960494354) 70%, rgba(54, 54, 54, 0) 80%);
+            }
+
+            
+            /* RWD */
+            @media (max-width:1280px) {
+                .card .btn {
+                    background-color: #fcfcdd;
+                    font-size: 30px;
+                    border: 1px solid black;
+                    color: black;
+                    box-shadow: 5px 5px;
+                    /* padding: 20px; */
+                    /* 移到下方 */
+                    position: absolute;
+                    left: 80px;
+                    bottom: 100px;
+    
+                }
+            }
+            @media (max-width:992px) {
+                .navbar{
+                    margin-top: -10px;
+                }
+                .row{
+                    width: 100%;
+                }
+                .card{
+                    height: 800px;
+                }
+                .col-sm-4{
+                    width: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .big-logo{
+                    width: 70%;
+                    margin-top: 20px;
+                    margin-bottom: -50px;
+                }
+            }
+            @media (max-width:768px) {
+                .row{
+                    width: 400px;
+                    margin-top: -30px;
+                }
+
+                .slide-pic {
+                    width: 100%;
+                    height: 250px;
+                }
+                .big-logo{
+                    width: 100%;
+                    margin-bottom: -50px;
+                }
+                .page img{
+                    width: 10%;
+                }
+                nav {
+                    height: 85px;
+                }
+                .nav-link {
+                    padding: 10px;
+                }
+                .input-group{
+                    padding-left: 50px;
+                    padding-bottom: 20px;
+                }
+            }
+            @media (max-width:576px) {
+                .navbar-brand{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                .row{
+                    width: 400px;
+                    margin-top: -30px;
+                }
+
+                .slide-pic {
+                    width: 100%;
+                    height: 250px;
+                }
+                .big-logo{
+                    width: 100%;
+                    margin-bottom: -50px;
+                }
+                .page img{
+                    width: 10%;
+                }
+                nav {
+                    height: 85px;
+                }
+                .nav-link {
+                    padding: 10px;
+                }
+                .input-group{
+                    padding-left: 50px;
+                    padding-bottom: 20px;
+                }
+                .card .btn {
+                    background-color: #fcfcdd;
+                    font-size: 30px;
+                    border: 1px solid black;
+                    color: black;
+                    box-shadow: 5px 5px;
+                    /* padding: 20px; */
+                    /* 移到下方 */
+                    position: absolute;
+                    left: 60px;
+                    bottom: 150px;
+    
+                }
+            }
+           
+            /* ８分頁 */
+            
+            
+            #under{
+                background-color: #FAF8F4;
+                color: white;
+                font-size: 30px;
+                line-height: 80px;
+                height: 80px;
+            }
+
+      

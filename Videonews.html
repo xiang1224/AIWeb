@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI人工智慧教學網</title>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/LOGO.png" type="image/x-icon">
+    <!-- Boostrap5.0 導入程式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+    <!-- 連結導覽列CSS -->
+    <!-- 連結內容CSS -->
+    <link rel="stylesheet" href="css/Videonews.css">
+    <style>
+        .picture{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第一層 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+            <!-- 品牌logo -->
+            <a class="navbar-brand" href="index.html"><img width="250px" height="50px" src="images/big.png"></a>
+
+            <!-- 第一部份：手機版 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 第二部份：桌上型電腦版 -->
+
+            <div class="collapse navbar-collapse" id="linkbar">
+                <!-- 列出內容 -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Video.html">影像辨識</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Voice.html">語音辨識</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">製作團隊</a>
+                    </li>
+                </ul>
+                <!-- 列出到右邊 -->
+                <form style="width:300px;" class="input-group">
+                    <input class="form-control me-3" type="search" placeholder="搜尋">
+                    <button class="btn btn-success" type="submit">搜尋</button>
+
+                </form>
+
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <!-- 第二層 三欄位內容 -->
+    <div class="container-fluid">
+        <div class="row content">
+            <!-- 左邊欄位 -->
+            <div class="col-sm-2 sidenav">
+                <div class="page">
+                    <a href="Video.html"><img width="25%"  src="images/image.png" title="認識影像辨識" > 認識影像辨識</a>
+                </div>
+                <div class="page">
+                    <a href="Videogame.html"><img width="25%" src="images/game.png" title="AI Game" > AI Game</a>
+                </div>
+                <div class="page">
+                    <a href="Videoquiz.html"><img width="25%" src="images/book.png" title="AI小學堂" > AI小學堂</a>
+                </div>
+                <div class="page">
+                    <a href="Videonews.html"><img width="25%" src="images/news.png" title="AI快報" > AI快報</a>
+                </div>
+            </div>
+            <!-- 中間欄位 -->
+            <div class="col-sm-10 main-content text-left">
+                <div class="row">
+                    <section class="news-container">
+                        <div class="news-card">
+                            <div class="news-card-image news-1"></div>
+                            <h2>培育AI醫療影像辨識關鍵人才</h2>
+                            <p>近年來，AI人工智慧技術在各領域應用均呈現爆炸性成長，而在醫學領域發展最快的，即為醫療影像的自動辨識....</p>
+                            <a href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=01_content&SiteID=1&MmmID=1036276263153520257&MGID=110022215181329731" target="_blank">READ MORE</a>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-card-image news-2"></div>
+                            <h2>影像辨識很省工！害蟲、魚種、花卉AI搞定</h2>
+                            <p>不管是害蟲判定、魚種辨識、花卉品種鑑定都需耗費大量時間、人力，各單位紛紛推出影像辨識系統，期望能提高工作效率....</p>
+                            <a href="https://www.agriharvest.tw/archives/16039" target="_blank">READ MORE</a>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-card-image news-3"></div>
+                            <h2>UAV空拍+AI影像辨識<br>協助地方守護路口安全</h2>
+                            <p>近年來無人機(UAV)空拍攝影及人工智慧(AI)影像辨識技術快速發展，交通部運輸研究所與訊力科技公司合作結合兩者技術....</p>
+                            <a href="https://www.iot.gov.tw/cp-24-206265-2e8d6-1.html" target="_blank">READ MORE</a>
+                        </div>
+                   </section>
+                   <p class="picture">※Image by <a href="https://www.freepik.com/free-vector/organic-flat-doctors-nurses-illustration_13233881.htm#page=2&query=doctor&position=37&from_view=search">Freepik</a></p>
+
+                    
+                    
+                </div>
+                  
+            </div>
+            <!-- 右邊欄位 -->
+            
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!-- 第三層 footer -->
+    <footer class="container-fluid text-center" id="under">
+        <p>AEUST-MIS設計&copy; 
+        </p>
+    </footer>
+
+</body>
+
+
+</html>
