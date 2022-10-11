@@ -64,7 +64,7 @@ var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
-
+let yourAnswer = []
 //function to display questions
 function displayQuestion(){
     for(var a=0;a<span.length;a++){
@@ -80,6 +80,7 @@ function displayQuestion(){
 
 //function to calculate scores
 function calcScore(e){
+    yourAnswer.push(e.innerHTML)
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length*10)
     {
         score= score+10;
@@ -116,14 +117,21 @@ function backToQuiz(){
 //function to check Answers
 function checkAnswer(){
     var answerBank= document.getElementById('answerBank');
-    var answers= document.getElementById('answers');
+    var answersLeft= document.getElementById('answersLeft');
+    var answersRight= document.getElementById('answersRight');
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
-    for(var a=0;a<questionBank.length;a++)
+    for(var a=0;a<5;a++)
     {
         var list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
-        answers.appendChild(list);
+        list.innerHTML=questionBank[a].question + "<br>你的答案是：" + yourAnswer[a] + "<br>正解：" + questionBank[a].answer
+        answersLeft.appendChild(list);
+    }
+    for(var a=5;a<10;a++)
+    {
+        var list= document.createElement('li');
+        list.innerHTML=questionBank[a].question + "<br>你的答案是：" + yourAnswer[a] + "<br>正解：" + questionBank[a].answer
+        answersRight.appendChild(list);
     }
 }
 

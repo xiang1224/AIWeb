@@ -68,16 +68,16 @@
             <!-- 左邊欄位 -->
             <div class="col-sm-2 sidenav">
                 <div class="page">
-                    <a href="Voice.html"><img src="images/image.png" title="認識影像辨識" id="icon" > 認識語音辨識</a>
+                    <a href="Video.html"><img width="25%" src="images/image.png" title="認識影像辨識"> 認識影像辨識</a>
                 </div>
                 <div class="page">
-                    <a href="Voicegame.html"><img src="images/game.png" title="AI Game" id="icon" > AI Game</a>
+                    <a href="Videogame.html"><img width="25%" src="images/game.png" title="AI Game"> AI Game</a>
                 </div>
                 <div class="page">
-                    <a href="Voicequiz.html"><img src="images/book.png" title="AI小學堂" id="icon"> AI小學堂</a>
+                    <a href="Videoquiz.html"><img width="25%" src="images/book.png" title="AI小學堂"> AI小學堂</a>
                 </div>
                 <div class="page">
-                    <a href="Voicenews.html"><img src="images/news.png" title="AI快報" id="icon"> AI快報</a>
+                    <a href="Videonews.html"><img width="25%" src="images/news.png" title="AI快報"> AI快報</a>
                 </div>
             </div>
             <!-- 中間欄位 -->
@@ -103,7 +103,6 @@
             
                 <!-- scoreboard section -->
                 <div id="scoreboard">
-                    <img src="/logo.png" alt="">
                     <h2 id="score-title">你的成績</h2>
                     <h2 id="score"></h2>
                     <button type="button" id="score-btn" onclick="backToQuiz()">返回測驗</button>
@@ -111,11 +110,20 @@
                 </div>
             
                 <!-- answers section -->
-                <div id="answerBank">
-                    <h2 id="answerBank-title">答案是:</h2>
-                    <ol type="1" id="answers">
-            
-                    </ol>
+                <div  id="answerBank">
+                    <h2 id="answerBank-title">總整理</h2>
+
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-4">
+                            <ol type="1" id="answersLeft">
+                            </ol>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <ol start="6" type="1" id="answersRight">
+                            </ol>
+                        </div>
+                    </div>
+                    
                     <button type="button" id="score-btn" onclick="backToQuiz()">返回測驗</button>
                 </div>
     </div>
@@ -124,7 +132,7 @@
         <p>AEUST-MIS設計&copy;
         </p>
     </footer>
-    <script src="js/Voicequiz .js"></script>
+    <script src="js/Voicequiz.js"></script>
 </body>
 
 

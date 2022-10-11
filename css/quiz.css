@@ -225,7 +225,7 @@ button:active{
     font-size: 2.5rem;
 }
 #answerBank li{
-    margin-left: 30px;
+    margin-top: 20px;
     line-height: 25px;
     color: white;
     text-align: left;
@@ -259,7 +259,7 @@ button:active{
         display: none;
     }
     #answerBank li{
-        margin-left: 10px;
+        padding-right: 40px;
         line-height: 20px;
         color: white;
         text-align: left;
@@ -281,7 +281,7 @@ button:active{
 }
 @media (max-width:576px) {
     .main-content {
-        height: 540px;
+        height: 1340px;
     }
     .container-fluid {
         background-color:#FAF8F4;
