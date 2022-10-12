@@ -114,6 +114,7 @@ a {
 
 .main-content {
     background-color: #f0f0f0;
+    text-align: center;
 }
 
 .main-content h1 {
@@ -137,6 +138,7 @@ iframe{
     text-align: center;
     height: 320px;
 }
+
 @media (max-width:1400px) {
     .content {
         height: 550px;
