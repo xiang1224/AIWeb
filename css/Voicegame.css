@@ -139,6 +139,9 @@ iframe{
     height: 320px;
 }
 
+#mic{
+    margin-top: 50px;
+}
 @media (max-width:1400px) {
     .content {
         height: 550px;
