@@ -26,7 +26,7 @@ var questionBank= [
         answer : '耳朵'
     },
     {
-        question : '下列何者為影像辨識需要用到的設備?',
+        question : '下列何者為語音辨識需要用到的設備?',
         option : ['收音設備','鏡頭','耳機','喇叭'],
         answer : '收音設備'
     },
