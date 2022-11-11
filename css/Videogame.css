@@ -129,15 +129,14 @@ a {
 }
 iframe {
     margin-top: 10px;
-    margin-left: 330px;
-    width: 920px;
+    width: 630px;
     height: 380px;
 }
-
-#video {
-    width: 920px;
-
+.teachvideo{
+    margin: 0 auto;
+    display: block;
 }
+
 @media (max-width:1600px) {
 
     iframe {
@@ -174,7 +173,7 @@ iframe {
 
     .content {
         width: 100%;
-        height: 750px;
+        height: 1115px;
         margin-left: auto;
         margin-right: auto;
     }
